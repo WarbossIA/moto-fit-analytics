@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto-Fit Analytics | Garaje de la Legión</title>
+</head>
+<body>
+
+    <header>
+        <h1>🏁 MOTO-FIT ANALYTICS 🏁</h1>
+        <p>Sistema Táctico Multidimensional</p>
+    </header>
+
+    <main>
+        <section class="tarjeta-formulario">
+            <h2>🎯 Calibración del Piloto y Filtros</h2>
+            <form>
+                <div class="fila-filtros">
+                    <div class="columna-filtro">
+                        <label for="entrepierna">Tu Entrepierna (mm):</label>
+                        <input type="number" id="entrepierna" placeholder="Ej: 780">
+                    </div>
+                    <div class="columna-filtro">
+                        <label for="peso">Tu Peso (kg):</label>
+                        <input type="number" id="peso" placeholder="Ej: 90">
+                    </div>
+                </div>
+
+                <div class="fila-filtros">
+                    <div class="columna-filtro">
+                        <label for="marca">Marca:</label>
+                        <select id="marca">
+                            <option value="todas">Todas las Marcas</option>
+                            <option value="kawasaki">Kawasaki</option>
+                            <option value="honda">Honda</option>
+                            <option value="yamaha">Yamaha</option>
+                            <option value="ktm">KTM</option>
+                            <option value="cfmoto">CFMoto</option>
+                            <option value="italika">Italika</option>
+                        </select>
+                    </div>
+                    <div class="columna-filtro">
+                        <label for="estilo">Estilo:</label>
+                        <select id="estilo">
+                            <option value="todas">Todos los Estilos</option>
+                            <option value="deportiva">Deportiva / Racing</option>
+                            <option value="naked">Naked / Urbana</option>
+                            <option value="cruiser">Cruiser / Custom</option>
+                            <option value="trabajo">Trabajo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button">Ejecutar Escáner Táctico</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>📊 Resultados de Compatibilidad Dinámica</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Marca / Estilo</th>
+                        <th>Compatibilidad (Altura)</th>
+                        <th>Manejabilidad (Peso)</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla">
+                    <tr>
+                        <td colspan="4" style="color:#777;">Ingresa tus datos y presiona Ejecutar...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
